@@ -16,11 +16,11 @@ type DatabaseConnection struct {
 
 func Connect(cfg config.Config, model interface{}) DatabaseConnection {
 	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Europe/London",
-		cfg.DbConfig.Host,
-		cfg.DbConfig.User,
-		cfg.DbConfig.Password,
-		cfg.DbConfig.Name,
-		cfg.DbConfig.Port,
+		cfg.Database.Host,
+		cfg.Database.User,
+		cfg.Database.Password,
+		cfg.Database.Name,
+		cfg.Database.Port,
 	)
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
