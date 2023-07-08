@@ -1,16 +1,22 @@
-name: config package
+name: database package
 
 on: [push, pull_request]
 
 jobs:
     build:
         runs-on: ubuntu-latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         steps:
-            - uses: actions/checkout@v3   
+            - uses: actions/checkout@v3
+            - uses: rymndhng/release-on-push-action@master
+              with:
+                bump_version_scheme: minor
             - name: Set up go
               uses: actions/setup-go@v4
               with:
                 go-version: '1.20.5'
+
             - name: Build
               run: go build -v ./...
             
