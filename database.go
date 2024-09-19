@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/hmly-tech/config"
+	"github.com/hmlylabs/config"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
