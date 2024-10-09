@@ -1,7 +1,6 @@
 package database
 
 import (
-	"fmt"
 	"log"
 	"time"
 
@@ -15,14 +14,7 @@ type DatabaseConnection struct {
 }
 
 func Connect[T any](cfg config.Config, model T) DatabaseConnection {
-	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Europe/London",
-		cfg.Database.Host,
-		cfg.Database.User,
-		cfg.Database.Password,
-		cfg.Database.Name,
-		cfg.Database.Port,
-	)
-	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	db, err := gorm.Open(postgres.Open(cfg.DatabaseUrl), &gorm.Config{})
 
 	if err != nil {
 		log.Fatal(err)
