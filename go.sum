@@ -5,8 +5,8 @@ github.com/gofiber/fiber/v2 v2.52.5 h1:tWoP1MJQjGEe4GB5TUGOi7P2E0ZMMRx5ZTG4rT+yG
 github.com/gofiber/fiber/v2 v2.52.5/go.mod h1:KEOE+cXMhXG0zHc9d8+E38hoX+ZN7bhOtgeF2oT6jrQ=
 github.com/google/uuid v1.5.0 h1:1p67kYwdtXjb0gL0BPiP1Av9wiZPo5A8z2cWkTZ+eyU=
 github.com/google/uuid v1.5.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
-github.com/hmlylabs/config v1.15.0 h1:l3fFTa16rK8fcT+N+YEa54JRxYDGlaatKwiypPbbOg0=
-github.com/hmlylabs/config v1.15.0/go.mod h1:yhAyHF14CtFBExluZq1RwW08KCbI1lTEAf7pvq/d/jA=
+github.com/hmlylabs/config v1.16.0 h1:0J/PjhvY8ZVMbeZ5olWyj84/8+wEh72RL6Wb/44cZ5Y=
+github.com/hmlylabs/config v1.16.0/go.mod h1:yhAyHF14CtFBExluZq1RwW08KCbI1lTEAf7pvq/d/jA=
 github.com/jackc/pgpassfile v1.0.0 h1:/6Hmqy13Ss2zCq62VdNG8tM1wchn8zjSGOBJ6icpsIM=
 github.com/jackc/pgpassfile v1.0.0/go.mod h1:CEx0iS5ambNFdcRtxPj5JhEz+xB6uRky5eyVu/W2HEg=
 github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 h1:iCEnooe7UlwOQYpKFhBabPMi4aNAfoODPEFNiAnClxo=
