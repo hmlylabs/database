@@ -3,7 +3,7 @@ module github.com/hmlylabs/database
 go 1.23
 
 require (
-	github.com/hmlylabs/config v1.15.0
+	github.com/hmlylabs/config v1.16.0
 	gorm.io/driver/postgres v1.5.9
 	gorm.io/gorm v1.25.12
 )
